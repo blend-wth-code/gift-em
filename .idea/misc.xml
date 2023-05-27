@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/edittext_background.xml" value="0.1685" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1685" />
+        <entry key="app/src/main/res/layout-land/activity_add_friend.xml" value="0.2623456790123457" />
+        <entry key="app/src/main/res/layout-land/activity_checkout.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/activity_contribute.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/activity_login.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/activity_my_profile.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/activity_order_list.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/activity_register.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-land/activity_splash.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/activity_upload_post.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/activity_view_post.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/menu.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/my_friends_list.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/pending_friends_list.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout-land/search_list.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/activity_add_friend.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_add_friend2.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/activity_add_post.xml" value="0.15165369890738223" />
+        <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.17300724637681159" />
+        <entry key="app/src/main/res/layout/activity_contribute.xml" value="0.17300724637681159" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/activity_login2.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2898550724637681" />
+        <entry key="app/src/main/res/layout/activity_my_profile.xml" value="0.23567047119140627" />
+        <entry key="app/src/main/res/layout/activity_order_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_post.xml" value="0.319114331231601" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.30298426531363226" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.26395316762065657" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_upload_post.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/activity_view_post.xml" value="0.2898550724637681" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.14010416666666667" />
+        <entry key="app/src/main/res/layout/checkout.xml" value="0.2898550724637681" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.14010416666666667" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.14010416666666667" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.14010416666666667" />
+        <entry key="app/src/main/res/layout/friends.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/menu.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/my_friends_list.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/order_list.xml" value="0.17300724637681159" />
+        <entry key="app/src/main/res/layout/pending_friends_list.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/search_list.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

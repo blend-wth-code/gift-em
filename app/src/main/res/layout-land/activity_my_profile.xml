@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E0CFD5"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.MyProfileActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/log_id_main"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/giftnamelogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Circular image view for user avatar -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:background="#E0CFD5"
+                android:src="@drawable/user_profile" />
+
+            <!-- User name -->
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="User Name"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <!-- Linear layout for "Add Post" and "Friends" buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal">
+
+
+                <Button
+                    android:id="@+id/posts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Posts" />
+
+                <Button
+                    android:id="@+id/friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Following" />
+                <Button
+                    android:id="@+id/approved_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Followers" />
+
+                <Button
+                    android:id="@+id/pending_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Requests" />
+
+            </LinearLayout>
+
+            <!-- RecyclerView to display user's posts or friends list -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rProfileVIew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/noContent"
+                android:layout_width="match_parent"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/menu_layout"
+        layout="@layout/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

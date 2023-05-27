@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "632682297380",
+    "firebase_url": "https://giftthem-943dd-default-rtdb.firebaseio.com",
+    "project_id": "giftthem-943dd",
+    "storage_bucket": "giftthem-943dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632682297380:android:fdde12051503ba47e540b1",
+        "android_client_info": {
+          "package_name": "com.example.giftem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632682297380-hl2ineri51vsupv5ro603dsc7ncpve3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwjO3gm7s43vrES9WR35Gbdq2hXyPCn30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632682297380-hl2ineri51vsupv5ro603dsc7ncpve3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

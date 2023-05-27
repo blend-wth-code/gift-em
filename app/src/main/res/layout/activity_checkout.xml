@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.CheckoutActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toTopOf="@id/menu_layout"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintCheckout">
+
+        <LinearLayout
+            android:id="@+id/linearCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#faf0e6"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintCheckout">
+
+            <!-- Header -->
+            <ImageView
+                android:id="@+id/titleAddFriend"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#E0CFD5"
+                android:padding="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/giftnamelogo" />
+
+            <!-- Order Summary -->
+            <TextView
+                android:id="@+id/order_summary_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="5dp"
+                android:text="Order Summary"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CORView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Checkout Details -->
+            <TextView
+                android:id="@+id/checkout_details_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#fff"
+                android:padding="5dp"
+                android:text="Checkout Details"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- First Name -->
+                <TextView
+                    android:id="@+id/first_name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/first_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textColor="#000" />
+
+                <!-- Last Name -->
+                <TextView
+                    android:id="@+id/last_name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Last Name"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/last_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textColor="#000" />
+
+                <!-- Card Number -->
+                <TextView
+                    android:id="@+id/card_number_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Card Number"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/card_number_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Card Number"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColor="#000" />
+
+                <!-- CVV -->
+                <TextView
+                    android:id="@+id/cvv_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="CVV"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/cvv_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="###"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColor="#000" />
+                <!-- Expiry -->
+                <TextView
+                    android:id="@+id/expiry_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Expiry Date"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/expiry_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Expiry Date"
+                    android:inputType="date"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#820001"
+                android:text="Pay"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintVertical_bias="0.25" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <!-- Footer -->
+
+    <include
+    android:id="@+id/menu_layout"
+    layout="@layout/menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

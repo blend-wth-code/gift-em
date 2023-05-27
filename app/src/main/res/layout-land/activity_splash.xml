@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/newgiftbox"
+    tools:context=".screens.SplashActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/power"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="Powered by Gift'em Team"
+        android:textColor="#591F0A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:padding="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/giftnamelogonobg" />
+
+    <ImageView
+        android:id="@+id/giftoLogo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gifto" />
+
+    <ProgressBar
+        android:id="@+id/power"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:indeterminate="true"
+        android:max="100"
+        android:progress="0" />
+
+</LinearLayout>
